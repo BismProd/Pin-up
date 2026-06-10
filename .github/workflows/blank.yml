@@ -1,0 +1,14 @@
+name: Test Cron 2
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Hello"
